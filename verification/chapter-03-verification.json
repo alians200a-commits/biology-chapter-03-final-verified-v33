@@ -1,0 +1,300 @@
+{
+  "sourceFiles": {
+    "pdf": {
+      "path": "verification/sources/o.pdf",
+      "exists": true,
+      "hash": "433ebdd3692587dacad828d7bebdb93a37656863ff87d39c03ec1715d0e63c82",
+      "size": 2778942,
+      "mtime": "2026-07-15T23:40:13.662Z"
+    },
+    "txt": {
+      "path": "verification/sources/BIOLOGY_CH03_CONTENT_MASTER.txt",
+      "exists": true,
+      "hash": "a58e854a2179660dea9808d38fd0621f35180ff614b5543a2b3cbbe675b962c4",
+      "size": 35311,
+      "mtime": "2026-07-15T23:40:13.689Z"
+    },
+    "js": {
+      "path": "assets/js/questions.js",
+      "exists": true,
+      "hash": "500a32fd6f88e1d5456c080ebd7a27ecd97b46667ffb2a766fdb89056a747cf6",
+      "size": 45815,
+      "mtime": "2026-07-15T23:18:18.651Z"
+    }
+  },
+  "originalQuestionsCount": 43,
+  "enrichmentQuestionsCount": 43,
+  "totalQuestionsCount": 86,
+  "originalDrawingQuestionEntries": 2,
+  "uniqueOriginalDrawingPrompts": 1,
+  "enrichmentDrawingQuestions": 0,
+  "firstEnrichmentId": "ENR-001",
+  "lastEnrichmentId": "ENR-043",
+  "missingEnrichmentIds": [],
+  "extraEnrichmentIds": [],
+  "duplicateEnrichmentIds": [],
+  "invalidEnrichmentIds": [],
+  "outOfOrderEnrichmentIds": [],
+  "originalSourceMismatches": [],
+  "enrichmentSourceMismatches": [],
+  "structuralMismatches": [],
+  "integrationErrors": [],
+  "runtimeErrors": [],
+  "networkUploadViolations": [],
+  "buildStatus": "PASS",
+  "lintStatus": "PASS",
+  "verifierExitCode": 0,
+  "finalStatus": "PASS — VERIFIED_AGAINST_AUTHENTIC_CANONICAL_SOURCE_FILES",
+  "sourceIdentityPassed": true,
+  "literalComparisonUsedForPass": true,
+  "lossyNormalizationUsedForPass": false,
+  "originalVerificationRecords": [
+    {
+      "id": "source-1",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-2",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-3",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-4",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-5",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-6",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-7",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-8",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-9",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-10",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-11",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-12",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-13",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-14",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-15",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-16",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-17",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-18",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-19",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-20",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-21",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-22",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-23",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-24",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-25",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-26",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-27",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-28",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-29",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-30",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-31",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-32",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-33",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-34",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-35",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-36",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-37",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-38",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-39",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-40",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-41",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-42",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    },
+    {
+      "id": "source-43",
+      "questionLiteralMatch": true,
+      "structureMatch": true
+    }
+  ],
+  "originalVerificationRecordsCount": 43,
+  "originalLiteralMismatches": [],
+  "enrichmentLiteralMismatches": [],
+  "missingFixedSegments": [],
+  "unexpectedUnderlines": [],
+  "underlineDomErrors": [],
+  "underlineVisualErrors": [],
+  "canonicalAnswerErrors": [],
+  "studentPresentationErrors": [],
+  "drawingPrivacyViolations": [],
+  "testStatus": "NOT_EXECUTED_BY_THIS_SCRIPT_SEE_CI_PLAYWRIGHT_STEP",
+  "auditStatus": "PASS — STRICT_LITERAL_AUDIT_AND_STUDENT_UX_VERIFIED",
+  "auditedApplicationFiles": {
+    "assets/js/questions.js": {
+      "sha256": "500a32fd6f88e1d5456c080ebd7a27ecd97b46667ffb2a766fdb89056a747cf6"
+    },
+    "assets/js/app.js": {
+      "sha256": "daf28645bf1032fd29c4dbf4a687dc393ce9d769bef6915173d1ae39c35e0daa"
+    },
+    "assets/css/style.css": {
+      "sha256": "5caf602bf015ebc4d6bdd730271e04b60478d83700d11831dbecff7f1daef27c"
+    },
+    "package.json": {
+      "sha256": "1e118399adfb9c12729ac5200b828e5f12f206f249e8737eb7922214e136a331"
+    },
+    "vite.config.ts": {
+      "sha256": "9ae772733c9cca147be70c8571a5ecd5208078ab92aef73e0f046799830b55a6"
+    },
+    "index.html": {
+      "sha256": "684c86fe8d28a424d321880ae6cc63562ded763727b794c8524e9c7c602761f4"
+    }
+  }
+}

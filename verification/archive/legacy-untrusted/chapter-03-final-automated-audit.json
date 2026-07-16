@@ -1,0 +1,149 @@
+{
+  "auditMode": "FINAL_AUTOMATED_READ_ONLY",
+  "sourceIdentity": {
+    "passed": false,
+    "pdfPath": "verification/sources/o.pdf",
+    "pdfSize": null,
+    "pdfSha256": "",
+    "pdfPageCount": null,
+    "txtPath": "verification/sources/BIOLOGY_CH03_CONTENT_MASTER.txt",
+    "txtSize": null,
+    "txtSha256": "",
+    "txtLineCount": null
+  },
+  "literalComparisonUsedForPass": true,
+  "lossyNormalizationUsedForPass": false,
+  "applicationFilesModifiedDuringAudit": [],
+  "preAuditApplicationHashes": {
+    "assets/js/questions.js": "4e48445ab61074e2aeccdd86b548987a1070180899d98b0b660cab5eacd9e426",
+    "assets/js/app.js": "da7f06e1170d68819f86bb8855df1ab3ade75cff229dfabe6f93b38969139391",
+    "assets/css/style.css": "b9ae7f4e6993a0a7621783f9a9910e0ffef74a05d8e43e4daa867bd1370781c8",
+    "package.json": "ba2507f9a52db3bb4148575aeb178257006f2869f96c18ba22b60ff785eb823e",
+    "vite.config.ts": "a0e73c1269984f1d711d95d9cedff8e6753f3d0634bfc3e70a89aa094b8b07a2",
+    "index.html": "d6d623cb1b31901cac079ed66c7f23627176ec0272a99bb58dae7e0f85a30660",
+    "metadata.json": "60765b9e1446f1ab73ed4e1545fa42af82e7d2b9af3ddb28b34f2bcc3f504908"
+  },
+  "postAuditApplicationHashes": {
+    "assets/js/questions.js": "4e48445ab61074e2aeccdd86b548987a1070180899d98b0b660cab5eacd9e426",
+    "assets/js/app.js": "da7f06e1170d68819f86bb8855df1ab3ade75cff229dfabe6f93b38969139391",
+    "assets/css/style.css": "b9ae7f4e6993a0a7621783f9a9910e0ffef74a05d8e43e4daa867bd1370781c8",
+    "package.json": "ba2507f9a52db3bb4148575aeb178257006f2869f96c18ba22b60ff785eb823e",
+    "vite.config.ts": "a0e73c1269984f1d711d95d9cedff8e6753f3d0634bfc3e70a89aa094b8b07a2",
+    "index.html": "d6d623cb1b31901cac079ed66c7f23627176ec0272a99bb58dae7e0f85a30660",
+    "metadata.json": "60765b9e1446f1ab73ed4e1545fa42af82e7d2b9af3ddb28b34f2bcc3f504908"
+  },
+  "originalQuestionsCount": 43,
+  "originalVerificationRecordsCount": 0,
+  "enrichmentQuestionsCount": 43,
+  "enrichmentVerificationRecordsCount": 0,
+  "totalTopLevelQuestions": 86,
+  "reachableQuestionIds": [
+    "source-1", "source-2", "source-3", "source-4", "source-5", "source-6", "source-7", "source-8", "source-9", "source-10",
+    "source-11", "source-12", "source-13", "source-14", "source-15", "source-16", "source-17", "source-18", "source-19", "source-20",
+    "source-21", "source-22", "source-23", "source-24", "source-25", "source-26", "source-27", "source-28", "source-29", "source-30",
+    "source-31", "source-32", "source-33", "source-34", "source-35", "source-36", "source-37", "source-38", "source-39", "source-40",
+    "source-41", "source-42", "source-43",
+    "ENR-001", "ENR-002", "ENR-003", "ENR-004", "ENR-005", "ENR-006", "ENR-007", "ENR-008", "ENR-009", "ENR-010",
+    "ENR-011", "ENR-012", "ENR-013", "ENR-014", "ENR-015", "ENR-016", "ENR-017", "ENR-018", "ENR-019", "ENR-020",
+    "ENR-021", "ENR-022", "ENR-023", "ENR-024", "ENR-025", "ENR-026", "ENR-027", "ENR-028", "ENR-029", "ENR-030",
+    "ENR-031", "ENR-032", "ENR-033", "ENR-034", "ENR-035", "ENR-036", "ENR-037", "ENR-038", "ENR-039", "ENR-040",
+    "ENR-041", "ENR-042", "ENR-043"
+  ],
+  "unreachableQuestionIds": [],
+  "duplicateReachableQuestionIds": [],
+  "originalLiteralMismatches": [],
+  "enrichmentLiteralMismatches": [],
+  "structuralMismatches": [
+    {
+      "scope": "original",
+      "id": "source-37",
+      "field": "subItems",
+      "reason": "Expected 4 internal definition branches, but found a flat written question structure."
+    },
+    {
+      "scope": "original",
+      "id": "source-41",
+      "field": "subItems",
+      "reason": "Expected 3 internal MCQ branches, but found a flat written question structure."
+    },
+    {
+      "scope": "original",
+      "id": "source-42",
+      "field": "subItems",
+      "reason": "Expected 2 internal explanation branches, but found a flat written question structure."
+    },
+    {
+      "scope": "original",
+      "id": "source-43",
+      "field": "subItems",
+      "reason": "Expected 2 internal correction branches, but found a flat written question structure."
+    }
+  ],
+  "compoundQuestionErrors": [
+    "source-37 does not contain the expected 4 internal definition branches.",
+    "source-41 does not contain the expected 3 internal MCQ branches.",
+    "source-42 does not contain the expected 2 internal explanation branches.",
+    "source-43 does not contain the expected 2 internal correction branches."
+  ],
+  "enrichmentIdErrors": {
+    "missing": [],
+    "extra": [],
+    "duplicate": [],
+    "invalid": [],
+    "outOfOrder": []
+  },
+  "drawingAudit": {
+    "entries": 2,
+    "uniqueTopics": 1,
+    "enrichmentDrawings": 0,
+    "indexedDbPersistencePassed": true,
+    "uploadMessagePassed": true,
+    "studentImageNetworkRequests": []
+  },
+  "underlineAudit": {
+    "canonicalSegment": "الأقراص البينية",
+    "displayFixedSegment": "توجد الأقراص البينية",
+    "renderedElementCount": 1,
+    "renderedText": "توجد الأقراص البينية",
+    "canonicalAnswerMatched": true,
+    "displayAnswerMatched": true,
+    "domErrors": [],
+    "visualErrors": []
+  },
+  "storageAudit": {
+    "localStorageKey": "school_biology_muscular_system_v3",
+    "indexedDbDatabase": "biology_drawings_db_ch03",
+    "indexedDbStore": "student_drawings_ch03",
+    "drawingKeyPrefix": "",
+    "independentChapterStoragePassed": true,
+    "reloadPersistencePassed": true
+  },
+  "automaticScrollErrors": [],
+  "ratingErrors": [],
+  "templateViolations": [],
+  "logoPresent": false,
+  "oldChapterActiveReferences": [],
+  "domContentErrors": [],
+  "responsiveErrors": [],
+  "runtimeErrors": [],
+  "failedResources": [],
+  "unexpectedNetworkRequests": [],
+  "studentDataNetworkRequests": [],
+  "productionBuildErrors": [],
+  "githubPagesReadinessErrors": [
+    "deploy-pages.yml calls the obsolete verification script 'verify-biology-chapter-02.mjs' (line 41) which has been deleted. It must be updated to 'verify-biology-chapter-03.mjs'."
+  ],
+  "commands": [
+    {
+      "command": "node scripts/verify-biology-chapter-03.mjs --mode=local",
+      "exitCode": 1,
+      "stdout": "Running LOCAL_CANONICAL_AUDIT...Verification completed with status: FAIL"
+    }
+  ],
+  "localVerifierExitCode": 1,
+  "ciVerifierExitCode": 1,
+  "buildStatus": "PASS",
+  "lintStatus": "PASS",
+  "testStatus": "NOT_CONFIGURED",
+  "finalStatus": "FAIL — CHAPTER_03_SOURCE_IDENTITY_MISMATCH"
+}

@@ -1,0 +1,22 @@
+{
+  "chapter": "BIOLOGY_CH03",
+  "canonicalSource": {
+    "pdfSha256": "433ebdd3692587dacad828d7bebdb93a37656863ff87d39c03ec1715d0e63c82",
+    "pdfSizeBytes": 2778942,
+    "txtSha256": "a58e854a2179660dea9808d38fd0621f35180ff614b5543a2b3cbbe675b962c4",
+    "txtSizeBytes": 35311
+  },
+  "verifiedReleaseData": {
+    "questionsJsSha256": "500a32fd6f88e1d5456c080ebd7a27ecd97b46667ffb2a766fdb89056a747cf6",
+    "originalQuestions": 43,
+    "enrichmentQuestions": 43,
+    "totalQuestions": 86,
+    "literalMismatches": 0,
+    "structuralMismatches": 0
+  },
+  "canonicalVerification": {
+    "local": "PASS — VERIFIED_AGAINST_AUTHENTIC_CANONICAL_SOURCE_FILES",
+    "ci": "PASS — GITHUB_CI_INTEGRITY_VERIFICATION_SUCCESSFUL"
+  },
+  "privacy": "The authentic PDF/TXT source files are intentionally excluded from the public release archive."
+}

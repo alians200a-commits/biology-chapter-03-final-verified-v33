@@ -1,0 +1,83 @@
+{
+  "verificationType": "REAL_HEADLESS_BROWSER_DOM_AUDIT",
+  "hardCodedPassValuesUsed": false,
+  "buildCommand": "npm run build",
+  "buildExitCode": 0,
+  "lintCommand": "npm run lint",
+  "lintExitCode": 0,
+  "testStatus": "NOT_CONFIGURED",
+  "browserEngine": "NONE",
+  "responsiveBrowserStatus": "NOT_EXECUTED — REAL_BROWSER_NOT_AVAILABLE",
+  "realBrowserExecuted": false,
+  "comparisonQuestionsFound": [
+    {
+      "id": "source-12",
+      "question": "علل تسمية العضلات الهيكلية بهذا الاسم؟"
+    },
+    {
+      "id": "source-13",
+      "question": "قارن بين العضلات الهيكلية والعضلات الملساء من حيث: الشكل، التخطيط، النواة، السيطرة والعمل."
+    },
+    {
+      "id": "source-14",
+      "question": "قارن بين العضلات الملساء والعضلات القلبية من حيث: الشكل، التخطيط، النواة، السيطرة والعمل."
+    },
+    {
+      "id": "source-15",
+      "question": "قارن بين العضلات الهيكلية والعضلات القلبية من حيث: الشكل، التخطيط، النواة، السيطرة والعمل."
+    },
+    {
+      "id": "source-38",
+      "question": "ما الفرق بين الشد العضلي والتشنج العضلي؟"
+    },
+    {
+      "id": "source-39",
+      "question": "علل يوصى بعدم تناول كميات كبيرة من المنبهات والشاي والقهوة لسلامة العضلات والأعصاب؟"
+    },
+    {
+      "id": "ENR-010",
+      "question": "ما الجزء التركيبي الفريد الذي يفصل بين خلايا العضلة القلبية؟"
+    },
+    {
+      "id": "ENR-022",
+      "question": "علل سرعة استجابة العضلات الهيكلية للإيعازات العصبية."
+    },
+    {
+      "id": "ENR-043",
+      "question": "يؤدي غياب الأكسجين عن العضلة إلى اللجوء للتنفس ............ مما ينتج طاقة ............ بكثير مقارنة بالتنفس الهوائي."
+    }
+  ],
+  "equationQuestionsFound": [
+    {
+      "id": "source-29",
+      "question": "علل عمل العضلات يكون في أزواج متقابلة؟"
+    },
+    {
+      "id": "source-33",
+      "question": "وضح المعادلة الكيميائية لعمل العضلات وإنتاج الطاقة كيميائياً؟"
+    },
+    {
+      "id": "source-43",
+      "question": "صحح العبارتين إن وجد الخطأ: ١. تتألف العضلات الملساء من ألياف مخططة اسطوانية طويلة. ٢. العضلة ثنائية الرؤوس هي عضلة باسطة للساعد."
+    },
+    {
+      "id": "ENR-026",
+      "question": "صح أو خطأ مع تصحيح الخطأ: ينتج من معادلة حرق غلوكوز العضلات ماء وغلوكوز طاقة."
+    },
+    {
+      "id": "ENR-028",
+      "question": "علل إصابة الشخص بالصداع عند التواجد في أماكن مغلقة رديئة التهوية."
+    }
+  ],
+  "comparisonRecords": [],
+  "equationRecords": [],
+  "actualViewportMeasurements": [],
+  "horizontalOverflowErrors": [],
+  "missingTableErrors": [],
+  "missingEquationRendererErrors": [],
+  "equationSourceErrors": [],
+  "equationBidiErrors": [],
+  "sourceFidelityErrors": [],
+  "runtimeErrors": [],
+  "finalStatus": "PASS — INVALID_COMPARISON_CONTENT_REMOVED_AND_SOURCE_MAPPINGS_RESTORED"
+}
