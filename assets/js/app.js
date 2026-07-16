@@ -699,9 +699,9 @@ function renderQuestionScreen() {
         <button data-f="all" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "all" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">الكل</button>
         <button data-f="unanswered" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "unanswered" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">غير مجاب</button>
         <button data-f="unrated" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "unrated" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">غير مقيم</button>
-        <button data-f="rating_8_10" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "rating_8_10" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">تقييم 8–10</button>
-        <button data-f="rating_5_7" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "rating_5_7" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">تقييم 5–7</button>
-        <button data-f="rating_1_4" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "rating_1_4" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">تقييم 1–4</button>
+        <button data-f="rating_8_10" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "rating_8_10" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">تقييم <span dir="ltr">8–10</span></button>
+        <button data-f="rating_5_7" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "rating_5_7" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">تقييم <span dir="ltr">5–7</span></button>
+        <button data-f="rating_1_4" class="filter-btn text-xs font-black py-1.5 px-3.5 rounded-full border transition-all cursor-pointer ${currentFilter === "rating_1_4" ? "bg-primary-purple border-primary-purple text-white" : "bg-white border-borders text-muted-text hover:border-primary-purple"}">تقييم <span dir="ltr">1–4</span></button>
       </div>
     </div>
   `;
@@ -839,28 +839,28 @@ function renderQuestionScreen() {
       </div>
     `;
   } else if (question.questionType === "fill") {
-    // Fill in the blanks question
+    // Fill in the blanks question with inline input rendering
     const totalBlanks = question.blanks ? question.blanks.length : 1;
     const currentBlanks = appState.fillAnswers[question.id] || Array(totalBlanks).fill("");
     
-    // We split the question by underscores or create separate text boxes.
-    // Let's render separate distinct text boxes for each blank.
-    let blanksFields = "";
-    for (let i = 0; i < totalBlanks; i++) {
-      blanksFields += `
-        <div class="flex items-center gap-2">
-          <span class="text-xs font-black text-muted-text">الفراغ (${i + 1}):</span>
-          <input type="text" data-blank-idx="${i}" value="${escapeHtml(currentBlanks[i] || "")}" placeholder="اكتب الكلمة المناسبة هنا..." class="blank-input flex-grow p-2.5 rounded-lg border border-borders bg-white focus:border-primary-purple focus:outline-none text-sm" ${isShown ? "disabled" : ""}>
-        </div>
-      `;
-    }
+    // Parse question and replace runs of 3+ consecutive dots with inline input fields
+    let blankIndex = 0;
+    let questionHtml = escapeHtml(question.question).replace(/\.{3,}/g, (match) => {
+      if (blankIndex < totalBlanks) {
+        const idx = blankIndex;
+        blankIndex++;
+        return `<input type="text" data-blank-idx="${idx}" value="${escapeHtml(currentBlanks[idx] || "")}" placeholder="..." class="blank-input inline-block px-2 py-1 rounded-lg border border-borders bg-white focus:border-primary-purple focus:outline-none focus:ring-2 focus:ring-primary-purple/20 text-sm font-serif w-32 align-middle" ${isShown ? "disabled" : ""}>`;
+      }
+      return match; // Return original dots if blanks exhausted
+    });
+    
+    // Replace newlines with <br /> for proper line break display
+    questionHtml = questionHtml.replace(/\n/g, '<br />');
+    
     inputAreaHtml = `
-      <div class="flex flex-col gap-3">
-        <div class="bg-page-bg/40 p-4 rounded-xl border border-borders/40 text-sm font-serif leading-relaxed text-main-text">
-          ${escapeHtml(question.question)}
-        </div>
-        <div class="flex flex-col gap-2">
-          ${blanksFields}
+      <div class="text-sm font-serif leading-relaxed text-main-text" dir="rtl">
+        <div class="bg-page-bg/40 p-4 rounded-xl border border-borders/40">
+          ${questionHtml}
         </div>
       </div>
     `;
@@ -1442,7 +1442,7 @@ function renderResultsScreen() {
           <span class="text-xl font-black text-green-600">${avgRating} / 10</span>
         </div>
         <div class="bg-white border border-borders p-4 rounded-2xl shadow-sm text-center flex flex-col gap-1">
-          <span class="text-xs font-black text-muted-text">تقييم 8-10</span>
+          <span class="text-xs font-black text-muted-text">تقييم <span dir="ltr">8–10</span></span>
           <span class="text-xl font-black text-indigo-600">${highMastery} أسئلة</span>
         </div>
         <div class="bg-white border border-borders p-4 rounded-2xl shadow-sm text-center flex flex-col gap-1">
@@ -1483,15 +1483,15 @@ function renderResultsScreen() {
         <h3 class="text-base font-black text-main-text border-b border-borders pb-3 mt-4">توزيع التقييمات الرقمية الذاتية</h3>
         <div class="grid grid-cols-3 gap-4">
           <div class="bg-indigo-50/50 border border-indigo-100 p-4 rounded-2xl text-center flex flex-col gap-1">
-            <span class="text-xs font-black text-indigo-700">8 - 10</span>
+            <span class="text-xs font-black text-indigo-700"><span dir="ltr">8–10</span></span>
             <span class="text-lg font-black text-indigo-900">${highMastery}</span>
           </div>
           <div class="bg-amber-50/50 border border-amber-100 p-4 rounded-2xl text-center flex flex-col gap-1">
-            <span class="text-xs font-black text-amber-700">5 - 7</span>
+            <span class="text-xs font-black text-amber-700"><span dir="ltr">5–7</span></span>
             <span class="text-lg font-black text-amber-900">${midMastery}</span>
           </div>
           <div class="bg-red-50/50 border border-red-100 p-4 rounded-2xl text-center flex flex-col gap-1">
-            <span class="text-xs font-black text-red-700">1 - 4</span>
+            <span class="text-xs font-black text-red-700"><span dir="ltr">1–4</span></span>
             <span class="text-lg font-black text-red-900">${lowMastery}</span>
           </div>
         </div>
